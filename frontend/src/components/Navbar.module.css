@@ -1,0 +1,25 @@
+.navbar{
+    height: 100px;
+    padding: 20px 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+}
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+li {
+    flex: 1;
+    list-style-type: none;
+}
+
+ul .selected{
+    color: #007bff;
+}

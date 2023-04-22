@@ -1,0 +1,89 @@
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 10%;
+    background-color: #f0f2fa;
+}
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    size: 100%;
+    width: 80%;
+    border-radius: 15px;
+
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+
+.label {
+    display: block;
+    color: #666666;
+    font-weight: bold;
+}
+
+.inputContainer>* {
+    margin: .75rem 0;
+}
+
+.input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #333333;
+    transition: border-bottom-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: #007bff;
+    transform: scale(1.05);
+}
+
+.actions{
+    display: flex;
+    font-size: 0.8rem;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.action:hover{
+    color: #0056b3;
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
