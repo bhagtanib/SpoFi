@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    background-color: #ddd;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    overflow: scroll;
+}
+.tableHead{
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.tableBody{
+
+}
+.table {
+    min-width: 100%;
+    border-collapse: collapse;
+}
+
+.headItem{
+    padding: 20px 10px;
+    text-align: left;
+}
+.value{
+    padding: 20px 20px;
+    text-align: left;
+}
+.row:nth-child(odd){
+    background-color: #eee
+}
