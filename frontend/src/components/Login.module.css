@@ -1,0 +1,136 @@
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+.container,
+.loadingContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2fa;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+}
+
+.left img {
+    size: 100%;
+    width: 80%;
+    border-radius: 15px;
+
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+
+.label {
+    display: block;
+    color: #666666;
+    font-weight: bold;
+}
+
+.inputContainer>* {
+    margin: .75rem 0;
+}
+
+.input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #333333;
+    transition: border-bottom-color 0.3s ease;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+input:focus {
+    outline: none;
+    /* border-bottom-color: #007bff; */
+    transform: scale(1.05);
+}
+
+.actions {
+    display: flex;
+    font-size: 0.8rem;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action:hover {
+    color: #0056b3;
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.loadingContainer {
+    gap: 0rem;
+}
+
+.loadingContainer span {
+    height: 50px;
+    width: 380px;
+    max-width: 400px;
+    background-color: gray;
+    border-radius: 5px;
+    background: linear-gradient(to right, #73aff0, #a0caf1, #0056b3);
+    background-size: 400% 100%;
+    animation: loadingAnimation 8s ease-in-out infinite;
+    margin: 1.5rem 0;
+    opacity: .5;
+}
+
+.loadingContainer span:nth-child(1) {
+    height: 100px;
+}
+.loadingContainer span:nth-child(2),
+.loadingContainer span:nth-child(3){
+    margin: 1rem 0;
+}
+
+.loadingContainer span:nth-child(4) {
+    height: 70px;
+}
+
+@keyframes loadingAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

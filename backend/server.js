@@ -29,15 +29,17 @@ app.post('/api/users', async (req, res) => {
         [email, password]
       );
       if (!rows.length) {
+        console.log('Wait a minute!!!!! who are you ?')
         return res.status(401).json({ message: 'Wait a minute!!!!! who are you ?' });
       }
-  
+      console.log('User authenticated successfully')
       return res.status(200).json({ message: 'User authenticated successfully' });
     } catch (error) {
-      return res.status(500).json({ message: 'Internal server error' });
+      console.log('error')
+      return res.status(500).json({ message: 'Internal error' });
     }
  });
-app.get('/church', async (req,res) => { 
+app.get('/church', async (req,res) => {     
   try {
     const [rows] = await connection.promise().query('SELECT * FROM Church');
     res.status(200).send(rows);
