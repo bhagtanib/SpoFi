@@ -1,0 +1,9 @@
+.home{
+    display: flex;
+}
+.sidebar{
+    flex: 1;
+}
+.tabs{
+    flex: 5;
+}
