@@ -1,12 +1,14 @@
 import styles from "./Login.module.css"
 import { useEffect, useState } from 'react';
 import axios from 'axios'
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [showPage, setShowPage] = useState(false)
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,7 +16,9 @@ const Login = () => {
       email: email,
       password: password
     }
-    axios.post('http://localhost:3001/api/users', params).then((res) => { alert(res.data.message) }, (err) => {alert(err.message)}).catch((err) => { alert(err.response.data.message) })
+    axios.post('http://localhost:3001/api/users', params)
+    .then((res) => { navigate('/home') }, (err) => {alert(err.message)})
+    .catch((err) => { alert(err.response.data.message) })
   }
   const cover = "https://spofi.org/wp-content/uploads/2023/03/cropped-Fatherhood-logo-block-1-1-300x96.png"
   useEffect(() => {
