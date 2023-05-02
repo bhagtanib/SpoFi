@@ -1,20 +1,21 @@
-import React from 'react'
-import styles from  "./SideBar.module.css"
+import React from "react";
+import styles from "./SideBar.module.css";
 
 const SideBar = () => {
   return (
-    <div className={styles.sidebar}>
-      
       <div class={styles.sidenav}>
-      <div className={styles.logoName}>Spokane Father Initiative
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-</div>
-</div>
-    </div>
-  )
-}
+        <div className={styles.logoName}>
+          <img src ="https://spofi.org/wp-content/uploads/2023/03/cropped-Fatherhood-logo-block-1-1-300x96.png"></img>
+        </div>
+          <p>Contact Manager</p>
+          <a href="#student">Student Information</a>
+          <a href="#faculty">Faculty Information</a>
+          <a href="#classes">Classes</a>
+          <a href="#mentor">Mentor Matching</a>
+          <a href="#church">Church List</a>
+        </div>
+      
+  );
+};
 
-export default SideBar
+export default SideBar;

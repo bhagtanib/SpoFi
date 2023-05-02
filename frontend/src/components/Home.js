@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import React from "react";
 import SideBar from "./SideBar";
+import Table from "./Table";
 
 const Home = () => {
   return (
@@ -11,7 +12,9 @@ const Home = () => {
         <SideBar className={styles.sidebar}> </SideBar>
       </div>
 
-      <div className={styles.tabs}></div>
+      <div className={styles.tabs}>
+        <Table></Table>
+      </div>
     </div>
   );
 };

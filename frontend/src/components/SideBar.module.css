@@ -1,44 +1,23 @@
-.side{
-    width: 20%;
-    background-color: 	#003151;
-    color: white;
-    text-align: center;
-    font-size: xx-large;
-    text-transform: uppercase;
-}
-.sidebar {
-    width: 0%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-}
+
 
 .logoName {
-    font-size: 35px;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    font-weight: 600;
+  height: 100px;
+  background-color: #ddd;
 }
 
 .sidenav {
     height: 100%;
-    width: 300px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #5e89de;
-    overflow-x: hidden;
-    padding-top: 20px;
+    background-color: #5e89de; 
   }
 
-  .sidenav a {
+  .sidenav a, p{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: #ffffff;
     display: block;
   }
-  .sidenav a:hover {
+  .sidenav a:hover, p:hover {
     color: #070707;
   }
 
