@@ -1,9 +1,7 @@
 .home{
     display: flex;
+    height: 100vh;
 }
 .sidebar{
-    flex: 1;
-}
-.tabs{
-    flex: 5;
+    width: 20%;
 }
