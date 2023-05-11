@@ -1,8 +1,6 @@
 
 import './App.css';
-import Header from './components/Header';
 import Login from './components/Login';
-import Navbar from './components/Navbar';
 import Home from './components/Home';
 import { Route, Routes } from 'react-router-dom';
 
